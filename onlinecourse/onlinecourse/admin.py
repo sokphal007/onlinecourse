@@ -33,3 +33,16 @@ admin.site.register(Lesson, LessonAdmin)
 admin.site.register(Question, QuestionAdmin)
 admin.site.register(Choice, ChoiceAdmin)
 admin.site.register(Submission)
+from django.contrib import admin
+from .models import Course, Lesson, Question, Choice, Submission, Instructor, Learner
+
+# ... (កូដ Inline និង ModelAdmin ដទៃទៀត) ...
+
+admin.site.register(Course, CourseAdmin)
+admin.site.register(Lesson, LessonAdmin)
+admin.site.register(Question, QuestionAdmin)
+admin.site.register(Choice, ChoiceAdmin)
+admin.site.register(Submission)
+admin.site.register(Instructor)
+admin.site.register(Learner)
+
